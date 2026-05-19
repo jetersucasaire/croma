@@ -1,0 +1,12 @@
+export { AuthService } from './auth.service';
+export { UsuarioService } from './usuario.service';
+export { ServicioService } from './servicio.service';
+export { MaterialService } from './material.service';
+export { DisenoService } from './diseno.service';
+export { PedidoService } from './pedido.service';
+export { ArchivoService } from './archivo.service';
+export { CategoriaService } from './categoria.service';
+export { ArmazonService } from './armazon.service';
+export { MensajeService } from './mensaje.service';
+export { NotificacionService } from './notificacion.service';
+export { ProyectoService } from './proyecto.service';

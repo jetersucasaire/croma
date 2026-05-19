@@ -1,0 +1,129 @@
+
+> backend@1.0.0 dev
+> ts-node-dev --respawn --transpile-only src/server.ts
+
+[INFO] 15:37:50 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 6.0.3)
+◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+Server running on port 3000
+[2026-05-12 15:37:52.036 -0500] [32mINFO[39m (16556): [36mBase de datos SQLite inicializada[39m
+[2026-05-12 15:37:52.038 -0500] [32mINFO[39m (16556): [36mPrometheus metrics inicializado[39m
+[2026-05-12 15:37:52.039 -0500] [32mINFO[39m (16556): [36mSocket.io inicializado[39m
+[2026-05-12 15:37:52.040 -0500] [32mINFO[39m (16556): [36mServer started[39m
+    [35mport[39m: 3000
+    [35menv[39m: "development"
+[2026-05-12 15:37:58.197 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "55729271-1740-4bc2-b712-6a4727b4d8f7"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/health"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:03.940 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "40249d27-4292-4a70-b39a-f60b8a45ca81"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=1"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.047 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "d9a60a00-e5cd-4787-a7db-d865886a5c7c"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=1"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.088 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "2eb08400-d80f-4142-b229-acfbbea04770"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=2"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.118 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "8f9bd837-355b-4d23-bfd3-d7750c14d787"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=2"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.148 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "487c8e1d-e39a-49ca-8a7d-9b2034759e4b"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=3"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.175 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "6742b522-dbd0-4fc8-a422-b12ecdb939f0"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=3"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.200 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "f6d70e5b-db28-4543-959c-6a7f62563adf"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=4"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.225 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "779ca7aa-5a1a-4d22-9fd2-9fffe58114fa"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=4"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.253 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "b6ca3817-37cf-47a8-afb2-400514ccdd7f"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=5"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.281 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "c47b54c9-a3d8-4632-87b3-97b6962e39ce"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=5"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.311 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "ae13d384-5551-4e80-8fb8-49fc01907927"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=6"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.340 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "a04020e3-f171-48e5-9ea0-bce11c6a84c8"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=6"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.364 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "e5366c7c-6774-42d7-b86b-070915869b07"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=7"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.392 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "b5ebae27-c915-41a8-b311-dc095a58912f"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=7"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.430 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "ee0e9012-8c00-49f4-a104-36fe21477f97"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=8"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.462 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "7bb8c5f0-1805-4171-babe-8926a02e6336"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=8"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.490 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "26d1cc77-579b-499c-ad90-44ed1ff2a537"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/disenos?servicio_id=9"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+[2026-05-12 15:38:04.516 -0500] [32mINFO[39m (16556): [36mRequest[39m
+    [35mrequestId[39m: "5f53168b-9c97-493e-83c5-1bbe41f11dde"
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/materiales?servicio_id=9"
+    [35mIP[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-PE) WindowsPowerShell/5.1.26100.8115"
+
+D:\CROMA\CROMA-jeter_dev\backend>

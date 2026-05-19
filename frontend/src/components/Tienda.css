@@ -1,0 +1,301 @@
+/* =========================================
+   ESTILOS BASE DE LA PÁGINA DE TIENDA
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.tienda-page {
+  background-color: #121212;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* =========================================
+   BARRA DE FILTROS (Debajo del Navbar)
+========================================= */
+.filtros-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 40px;
+  background-color: #121212;
+  border-bottom: 2px solid #2a2a2a;
+}
+
+.filtros-label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+
+.filtro-select {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 160px;
+  appearance: auto;
+  transition: border-color 0.3s;
+}
+
+.filtro-select:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+/* =========================================
+   TÍTULO DE LA SECCIÓN
+========================================= */
+.tienda-header-simple {
+  padding: 30px 40px 10px;
+}
+
+.tienda-title {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   LAYOUT PRINCIPAL DIVIDIDO (Master-Detail)
+========================================= */
+.tienda-layout-dividido {
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: flex-start; 
+}
+
+/* =========================================
+   COLUMNA IZQUIERDA: LISTA DE PRODUCTOS
+========================================= */
+.columna-lista {
+  flex: 1; /* Ocupa el espacio sobrante (aprox 60-70%) */
+}
+
+.productos-grid-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.producto-card-horizontal {
+  display: flex;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+  transition: border-color 0.3s, transform 0.2s, background-color 0.3s;
+}
+
+.producto-card-horizontal:hover {
+  border-color: #555;
+  transform: translateX(5px);
+}
+
+/* Estado cuando el producto recibe clic */
+.producto-card-horizontal.seleccionado {
+  border-color: #646cff; 
+  background-color: #242424;
+}
+
+.producto-imagen-mini {
+  width: 140px;
+  height: 140px;
+  background-color: #000;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+.producto-info-horizontal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.producto-nombre {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.producto-specs-basicas {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.producto-footer-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Empuja el footer al fondo de la tarjeta */
+}
+
+.producto-precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-ver-detalle {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.95rem;
+}
+
+.btn-ver-detalle:hover {
+  background-color: #444;
+}
+
+/* =========================================
+   COLUMNA DERECHA: PANEL DE DETALLES
+========================================= */
+.columna-detalle {
+  width: 450px; /* Ancho fijo para mantener proporción */
+  position: sticky;
+  top: 90px; /* Se queda pegado en la pantalla al hacer scroll */
+}
+
+.panel-detalle-tarjeta {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detalle-titulo {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.detalle-imagen-principal {
+  width: 100%;
+  height: 220px;
+  background-color: #000;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.detalle-specs p {
+  color: #ccc;
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.detalle-descripcion {
+  margin-top: 20px !important;
+  line-height: 1.6;
+  color: #a0a0a0 !important;
+}
+
+/* =========================================
+   SECCIÓN DE PORTAFOLIO EN DETALLE
+========================================= */
+.detalle-portafolio {
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.detalle-portafolio h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.portafolio-imagenes {
+  display: flex;
+  gap: 15px;
+}
+
+.portafolio-img {
+  width: 90px;
+  height: 90px;
+  background-color: #000;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* =========================================
+   BOTÓN FINAL: REGISTRAR PEDIDO
+========================================= */
+.btn-registrar-pedido {
+  margin-top: 35px;
+  background-color: #e0e0e0;
+  color: #000;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.btn-registrar-pedido:hover {
+  background-color: #ffffff;
+}
+
+.btn-registrar-pedido:active {
+  transform: scale(0.98);
+}
+
+/* =========================================
+   MENSAJES DE ESTADO (Vacío / Sin resultados)
+========================================= */
+.panel-detalle-vacio {
+  border: 1px dashed #555;
+  padding: 60px 40px;
+  text-align: center;
+  color: #888;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: rgba(26, 26, 26, 0.5);
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 40px;
+  background-color: #1a1a1a;
+  border: 1px dashed #333;
+  border-radius: 8px;
+  color: #888;
+}

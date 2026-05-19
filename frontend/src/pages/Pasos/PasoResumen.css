@@ -1,0 +1,77 @@
+.paso-resumen h2 {
+  margin: 0 0 10px;
+}
+
+.paso-resumen .paso-desc {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.resumen-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resumen-seccion {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.resumen-seccion:last-of-type {
+  border-bottom: none;
+}
+
+.resumen-seccion h3 {
+  margin: 0 0 15px;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: #666;
+}
+
+.resumen-item .item-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.resumen-item .item-value {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.resumen-item .enlace {
+  color: #3498db;
+  font-size: 0.9rem;
+}
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #f8f9fa;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.total-amount {
+  color: #27ae60;
+}
+
+.resumen-nota {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e8f4f8;
+  border-radius: 8px;
+  color: #2c3e50;
+}
+
+.resumen-nota p {
+  margin: 0;
+  font-size: 0.9rem;
+}

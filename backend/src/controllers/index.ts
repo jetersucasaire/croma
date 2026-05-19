@@ -1,0 +1,12 @@
+export { AuthController } from './auth.controller';
+export { UsuarioController } from './usuario.controller';
+export { ServicioController } from './servicio.controller';
+export { MaterialController } from './material.controller';
+export { DisenoController } from './diseno.controller';
+export { PedidoController } from './pedido.controller';
+export { ArchivoController } from './archivo.controller';
+export { CategoriaController } from './categoria.controller';
+export { ArmazonController } from './armazon.controller';
+export { MensajeController } from './mensaje.controller';
+export { NotificacionController } from './notificacion.controller';
+export { ProyectoController } from './proyecto.controller';

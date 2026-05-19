@@ -1,0 +1,143 @@
+.dropzone {
+  border: 2px dashed #9CA3AF;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  background-color: #F9FAFB;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone:hover {
+  border-color: #2563EB;
+  background-color: #EFF6FF;
+}
+
+.dragActive {
+  border-color: #2563EB !important;
+  background-color: #EFF6FF !important;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  border-color: #EF4444 !important;
+  background-color: #FEF2F2 !important;
+}
+
+.input {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  color: #9CA3AF;
+}
+
+.text {
+  color: #374151;
+  font-size: 16px;
+}
+
+.text .browse {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+.subtext {
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.previewImage {
+  max-width: 200px;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.fileIcon {
+  color: #6B7280;
+}
+
+.fileName {
+  color: #374151;
+  font-size: 14px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.removeButton {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #EF4444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.removeButton:hover {
+  background-color: #DC2626;
+}
+
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #2563EB;
+  transition: width 300ms ease;
+}
+
+.progressText {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.errorMessage {
+  color: #EF4444;
+  font-size: 14px;
+  margin-top: 8px;
+}

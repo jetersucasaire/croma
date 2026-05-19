@@ -1,0 +1,11 @@
+export { UsuarioRepository } from './usuario.repository';
+export { ServicioRepository } from './servicio.repository';
+export { MaterialRepository } from './material.repository';
+export { DisenoRepository } from './diseno.repository';
+export { PedidoRepository } from './pedido.repository';
+export { ArchivoRepository } from './archivo.repository';
+export { CategoriaRepository } from './categoria.repository';
+export { ArmazonRepository } from './armazon.repository';
+export { MensajeRepository } from './mensaje.repository';
+export { NotificacionRepository } from './notificacion.repository';
+export { ProyectoRepository } from './proyecto.repository';

@@ -1,0 +1,321 @@
+.diseno-logos-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.dl-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.dl-header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.header-icon {
+  font-size: 2.5rem;
+}
+
+.dl-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-subtitle {
+  margin: 10px 0 0;
+  opacity: 0.9;
+}
+
+.dl-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.dl-intro {
+  margin-bottom: 40px;
+}
+
+.intro-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.intro-card h2 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.pasos-proceso {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.pasos-proceso li {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  margin: 0;
+  color: #333;
+}
+
+.step-content p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-iniciar {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.proyectos-list h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.proyecto-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.proyecto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.proyecto-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.proyecto-tracking {
+  font-size: 0.8rem;
+  color: #888;
+  font-family: monospace;
+}
+
+.proyecto-estado {
+  margin-bottom: 15px;
+}
+
+.estado-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.estado-desc {
+  margin: 5px 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.proyecto-fase {
+  margin-bottom: 15px;
+}
+
+.fase-progress {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.fase-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.fase-text {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.proyecto-fecha {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.btn-ver-proyecto {
+  width: 100%;
+}
+
+.empty-proyectos {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-proyectos .empty-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.loading-state {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.new-project-modal {
+  padding: 20px;
+}
+
+.new-project-modal h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.modal-subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.briefing-form .form-group {
+  margin-bottom: 20px;
+}
+
+.briefing-form label {
+  display: block;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.briefing-form input,
+.briefing-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.briefing-form input:focus,
+.briefing-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.colores-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.color-btn.selected {
+  border-color: #333;
+}
+
+.estilo-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.estilo-option {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.estilo-option:hover {
+  border-color: #667eea;
+}
+
+.estilo-option.selected {
+  border-color: #667eea;
+  background: #f0f7ff;
+}
+
+.estilo-option input {
+  display: none;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .dl-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .pasos-proceso {
+    grid-template-columns: 1fr;
+  }
+  
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}

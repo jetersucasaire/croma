@@ -1,0 +1,385 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 32px;
+  background-color: #1f2937;
+  color: white;
+  position: relative;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdownBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.arrow {
+  font-size: 10px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #374151;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 8px;
+  min-width: 160px;
+  z-index: 100;
+}
+
+.dropdownMenu li {
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f3f4f6;
+}
+
+.search {
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.links a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.links a.active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.carritoLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  background-color: #ef4444;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.loginBtn {
+  background-color: #2563eb;
+  padding: 8px 16px !important;
+}
+
+.loginBtn:hover {
+  background-color: #1d4ed8 !important;
+}
+
+.notifBtn {
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.notifBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ef4444;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.notifDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: #374151;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  z-index: 200;
+}
+
+.notifHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.notifHeader span {
+  font-weight: 600;
+}
+
+.notifHeader button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.notifList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notifList p {
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.notifItem {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+}
+
+.notifItem:hover {
+  background-color: #f9fafb;
+}
+
+.notifItem.noLeido {
+  background-color: #eff6ff;
+}
+
+.notifAsignacion {
+  border-left: 4px solid #2563eb;
+}
+
+.notifAsignacion.noLeido {
+  background: linear-gradient(90deg, #eff6ff 0%, #f8fafc 100%);
+}
+
+.notifItemHead {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.notifIcon {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.notifAsignadoPor {
+  font-size: 13px;
+  color: #374151;
+  margin: 0 0 6px;
+  padding: 0;
+  text-align: left;
+}
+
+.notifMetaLine {
+  font-size: 12px;
+  color: #4b5563;
+  margin: 2px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.notifMetaLine span {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.notifTracking {
+  font-size: 12px;
+  font-family: ui-monospace, monospace;
+  color: #1d4ed8;
+  margin: 4px 0 6px;
+  padding: 0;
+  text-align: left;
+}
+
+.notifMensaje {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0;
+  padding: 0;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+.notifFecha {
+  display: block;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+.notifItem strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.notifItem p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.notifItem span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.notifActionBtn {
+  margin-top: 6px;
+  padding: 4px 10px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.notifActionBtn:hover {
+  background: #1d4ed8;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.profileName {
+  font-size: 14px;
+  color: white;
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  color: #f87171;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  text-decoration: underline;
+}
+
+.profileAvatar {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsappFloat {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  z-index: 50;
+}
+
+.whatsappFloat:hover {
+  background-color: #128c7e;
+}
+
+.whatsappFloat span {
+  font-size: 14px;
+  font-weight: 500;
+}

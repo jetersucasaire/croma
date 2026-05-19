@@ -1,0 +1,157 @@
+.wizard-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.wizard-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wizard-error button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wizard-header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-volver {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wizard-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.servicio-icono {
+  font-size: 1.5rem;
+}
+
+.wizard-titulo h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.wizard-steps {
+  background: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aaa;
+}
+
+.step.active {
+  color: #3498db;
+}
+
+.step.completed {
+  color: #27ae60;
+}
+
+.step-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step.active .step-num {
+  background: #3498db;
+  color: white;
+}
+
+.step.completed .step-num {
+  background: #27ae60;
+  color: white;
+}
+
+.step-label {
+  font-size: 0.9rem;
+}
+
+.step-line {
+  width: 60px;
+  height: 2px;
+  background: #ddd;
+}
+
+.wizard-error-msg {
+  background: #e74c3c;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.wizard-contenido {
+  flex: 1;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wizard-footer {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-anterior {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-siguiente {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-siguiente:hover {
+  background: #219a52;
+}

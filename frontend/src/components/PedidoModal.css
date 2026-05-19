@@ -1,0 +1,157 @@
+.pedido-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pedido-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.pedido-imagen img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.icono-grande {
+  font-size: 4rem;
+}
+
+.pedido-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pedido-descripcion {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pedido-precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.precio-oferta {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
+.pedido-categoria {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.detalle-tecnico {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.detalle-tecnico h4 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.detalle-tecnico ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.detalle-tecnico li {
+  margin: 4px 0;
+}
+
+.pedido-acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.pedido-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-seccion {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.form-seccion:last-of-type {
+  border-bottom: none;
+}
+
+.form-seccion h4 {
+  margin: 0 0 12px;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.pedido-form .form-group {
+  margin-bottom: 12px;
+}
+
+.pedido-form .form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.pedido-form .form-group input,
+.pedido-form .form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.pedido-form .form-group input:focus,
+.pedido-form .form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-resumen {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.form-resumen p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.form-acciones {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}

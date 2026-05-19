@@ -1,0 +1,226 @@
+.importacion-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.importacion-header {
+  margin-bottom: 30px;
+}
+
+.importacion-header h1 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.importacion-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.import-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.instructions {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.instructions h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.instructions ol {
+  padding-left: 20px;
+  color: #555;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+}
+
+.download-btn {
+  margin-top: 10px;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  position: relative;
+}
+
+.drop-zone:hover,
+.drop-zone.active {
+  border-color: #4A90D9;
+  background: #f0f7ff;
+}
+
+.drop-zone.has-file {
+  border-color: #28a745;
+  background: #f0fff4;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.drop-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.drop-icon {
+  font-size: 48px;
+}
+
+.drop-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.drop-formats {
+  font-size: 12px;
+  color: #888;
+}
+
+.file-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-icon {
+  font-size: 48px;
+}
+
+.file-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.file-size {
+  font-size: 12px;
+  color: #888;
+}
+
+.import-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.import-result {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.import-result h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.result-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.result-stats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 8px;
+  min-width: 120px;
+}
+
+.result-stats .stat.success {
+  background: #d4edda;
+}
+
+.result-stats .stat.total {
+  background: #cce5ff;
+}
+
+.result-stats .stat.error {
+  background: #f8d7da;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.error-list {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.error-list h4 {
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.error-list ul {
+  padding-left: 20px;
+  color: #721c24;
+}
+
+.error-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.error-list .more {
+  font-style: italic;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .import-section {
+    flex-direction: column;
+  }
+  
+  .result-stats {
+    justify-content: center;
+  }
+}

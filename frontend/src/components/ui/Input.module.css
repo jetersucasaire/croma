@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.hasLeftIcon {
+  padding-left: 44px;
+}
+
+.hasRightIcon {
+  padding-right: 44px;
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 100%;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.icon:first-child {
+  left: 0;
+}
+
+.icon:last-child:not(.passwordToggle) {
+  right: 0;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  color: #6b7280;
+}
+
+.passwordToggle:hover {
+  color: #374151;
+}
+
+.hasError .input {
+  border-color: #dc2626;
+}
+
+.hasError .input:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.error {
+  font-size: 13px;
+  color: #dc2626;
+}
+
+.helperText {
+  font-size: 13px;
+  color: #6b7280;
+}

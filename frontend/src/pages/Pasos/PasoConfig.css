@@ -1,0 +1,141 @@
+.paso-config h2 {
+  margin: 0 0 10px;
+}
+
+.paso-config .paso-desc {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.config-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.config-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.materiales-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.no-materiales {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+.material-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.material-card:hover {
+  border-color: #3498db;
+}
+
+.material-card.selected {
+  border-color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.material-info h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+}
+
+.material-tipo {
+  margin: 0;
+  color: #888;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.material-precio {
+  text-align: right;
+}
+
+.precio {
+  display: block;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.stock {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.cantidad-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cantidad-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cantidad-btn:hover {
+  background: #f5f5f5;
+}
+
+.cantidad-input input {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-stock {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.config-total {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.total-breakdown {
+  border-top: 2px solid #eee;
+  padding-top: 15px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.total-final {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  padding-top: 15px;
+}

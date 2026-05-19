@@ -1,0 +1,160 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  position: relative;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:focus {
+  outline: none;
+  ring: 3px;
+  ring-color: rgba(37, 99, 235, 0.2);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Primary - Azul Eléctrico #2563EB */
+.primary {
+  background-color: #2563EB;
+  color: white;
+}
+
+.primary:hover:not(:disabled) {
+  background-color: #1D4ED8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Secondary - Gris #4B5563 */
+.secondary {
+  background-color: transparent;
+  color: #374151;
+  border: 1px solid #D1D5DB;
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: #F9FAFB;
+  border-color: #9CA3AF;
+}
+
+/* Outline */
+.outline {
+  background-color: transparent;
+  border: 2px solid #2563EB;
+  color: #2563EB;
+}
+
+.outline:hover:not(:disabled) {
+  background-color: #2563EB;
+  color: white;
+}
+
+/* Ghost */
+.ghost {
+  background-color: transparent;
+  color: #4B5563;
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: #F3F4F6;
+}
+
+/* Danger - Rojo Rubí #EF4444 */
+.danger {
+  background-color: #EF4444;
+  color: white;
+}
+
+.danger:hover:not(:disabled) {
+  background-color: #DC2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sizes */
+
+/* Small - 32px */
+.sm {
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Medium - 48px (estándar primario) */
+.md {
+  height: 48px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Large - 56px */
+.lg {
+  height: 56px;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/* Full Width */
+.fullWidth {
+  width: 100%;
+}
+
+/* Loading */
+.loading {
+  pointer-events: none;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hiddenText {
+  visibility: hidden;
+}
+
+/* Icon Button */
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.icon.sm {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+
+.icon.lg {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+}

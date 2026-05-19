@@ -1,0 +1,138 @@
+.sello-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sello-editor .editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.sello-editor .toolbar-section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sello-editor .mecanismo-label,
+.sello-editor .forma-label {
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  color: #495057;
+}
+
+.upload-logo-btn {
+  padding: 8px 16px;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.upload-logo-btn:hover {
+  background: #218838;
+}
+
+.sello-editor .editor-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sello-editor .text-settings {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sello-editor .setting-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sello-editor .setting-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sello-editor .setting-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.sello-editor .setting-group input:focus {
+  outline: none;
+  border-color: #4A90D9;
+}
+
+.sello-editor .editor-canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative;
+  min-height: 400px;
+  flex: 1;
+}
+
+.sello-editor .loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sello-editor .editor-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.sello-editor .editor-toolbar select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .sello-editor .editor-content {
+    flex-direction: column;
+  }
+  
+  .sello-editor .editor-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .sello-editor .toolbar-section {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

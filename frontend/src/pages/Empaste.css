@@ -1,0 +1,238 @@
+.empaste-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.empaste-header {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.empaste-header h1 {
+  margin: 10px 0;
+}
+
+.header-icon {
+  font-size: 2.5rem;
+}
+
+.header-subtitle {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.empaste-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.info-section h2,
+.extras-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.tipo-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 3px solid transparent;
+}
+
+.tipo-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.tipo-card.selected {
+  border-color: #e74c3c;
+}
+
+.tipo-card h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.tipo-desc {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.tipo-precio {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.precio-label {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.precio-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.tipo-caract {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tipo-caract li {
+  font-size: 0.85rem;
+  color: #666;
+  padding: 4px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tipo-caract li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.extras-section {
+  margin-bottom: 40px;
+}
+
+.extras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.extra-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.extra-icon {
+  font-size: 1.5rem;
+}
+
+.extra-item h4 {
+  margin: 0;
+  color: #333;
+}
+
+.extra-item p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.cotizador-modal {
+  padding: 20px;
+}
+
+.cotizador-modal h2 {
+  margin: 0 0 25px;
+  color: #333;
+}
+
+.calc-form .form-group {
+  margin-bottom: 20px;
+}
+
+.calc-form label {
+  display: block;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.calc-form select,
+.calc-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.calc-form .help-text {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.btn-calcular {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.resultado-cotizacion {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.resultado-detalle {
+  margin-bottom: 15px;
+}
+
+.detalle-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detalle-row span:first-child {
+  color: #666;
+}
+
+.resultado-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px 0;
+  border-top: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.btn-confirmar {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .tipos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .extras-grid {
+    grid-template-columns: 1fr;
+  }
+}
